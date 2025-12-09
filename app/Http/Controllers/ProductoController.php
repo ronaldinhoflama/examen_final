@@ -11,6 +11,11 @@ class ProductoController extends Controller
         $productos = Producto::all();
         return view('productos.index', compact('productos'));
     }
+    public function stockAlto()
+    {
+        $productos = Producto::where('stock', '>', 5)->get();
+        return view('productos.index', compact('productos'));
+    }
 
     public function create()
     {

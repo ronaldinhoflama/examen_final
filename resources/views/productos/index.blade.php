@@ -1,6 +1,9 @@
 <h1>Lista de Productos</h1>
 
 <a href="{{ route('productos.create') }}">Crear Producto</a>
+<a href="{{ route('productos.stock.alto') }}" class="btn btn-primary">
+    Stock alto
+</a>
 
 <table border="1" cellpadding="8">
     <tr>
